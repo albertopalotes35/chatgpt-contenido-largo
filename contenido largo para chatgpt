@@ -1,0 +1,3068 @@
+[
+    {
+        "id": "a1f594df6e7881d2",
+        "type": "group",
+        "z": "21d0254e28c5ab8d",
+        "name": "Velocidad ventilador",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "62666613ba6b50e1",
+            "c9aee40ff3228792",
+            "e909fa2ba7deb5ab",
+            "a164635d7cc7f5eb",
+            "ff60ec03c1200f6b",
+            "5f0b38135d0e9011",
+            "eab653f13656fa35",
+            "04f8916bb3087f69",
+            "ba98b105c3d480a0",
+            "9ad196c6d152ac13",
+            "e5ac07915f079271",
+            "823e6543a7f1b305",
+            "846eae062ee8f257",
+            "f02a1b70574360a6",
+            "3c7cbc2bafad9869",
+            "679b54548d51b647",
+            "0a0c413466ec7899",
+            "0652706b4a42d95d",
+            "1c89bb1966762d8b",
+            "1d073876c08ab998",
+            "3bc23416c5e47140",
+            "0d9390d838a80beb",
+            "c0b321397397e6db",
+            "86b41f363f8da741",
+            "4c559358898e1055",
+            "c036ca652972c11b",
+            "d504a1e42c2845e0",
+            "a334011c47e619c1",
+            "b998dca134efa42a",
+            "a64dc3ec6f944653",
+            "7c4280eebe9ac01c",
+            "3b472899f15dd882",
+            "5a7186eadec82485",
+            "df54512bbb6e02f0",
+            "1bd724c5a242427a",
+            "7ebb3123475824f8",
+            "0ed6ef677166fc32",
+            "705435a5f09ee208",
+            "16415d4199b7e6e9",
+            "33f62be2b98abbce",
+            "87e5bff551be25b3",
+            "5411b1b4c23e9e25",
+            "2fcb220ccfb2a3fd",
+            "e6c9abead69349de",
+            "9f8c14f631f47454",
+            "6902e8f21f1f6812",
+            "8a0a89d2b5b378a8",
+            "cce7cd7de8167991",
+            "5f0cb35d8ad5b7d9",
+            "ba4cfaed1f7a2136",
+            "e93a786e2557f747",
+            "bc94504dc708dff8",
+            "8bb8419228099bd1",
+            "d8b48de983102451",
+            "2218a4b290b0366d",
+            "02709d450d8c05cd",
+            "335bbffcb43ae5a6",
+            "5eb94ba3cbe133d7",
+            "71122a89680ff78b",
+            "f6f5b5950cd59b16",
+            "c196a6d011b17a08",
+            "458b45b8995a10bd",
+            "729014c10a4db876",
+            "820753a4993374cb",
+            "951dc9c5333c1de1",
+            "879185db5397ab5b",
+            "dbe2b8bbb6961b62",
+            "4db59b1fd2ebcb01",
+            "884e6d6ebab53d21",
+            "311d4d48389c25bd",
+            "068744846ea925ed",
+            "acb68d84c99fea1b",
+            "7b9370ff0f035350",
+            "3a921921911285a0",
+            "e92a3e51e691c601",
+            "68f482e8a38d7a69",
+            "74bd39115ace6af0",
+            "52b47b258dc715be",
+            "95dd28421be47731",
+            "35a1b93fec997374",
+            "5daa889783142e57",
+            "1735214200384909",
+            "792414431e5e4dd8",
+            "aa00bf9410f0e157",
+            "13def03d693d47c3",
+            "e5af9b2f22112f92",
+            "6f9e1db27ed8f2ec",
+            "a8593928d782d0ba",
+            "c34eb78366b8bba2",
+            "596df1734f46690b",
+            "ad06f569800a47d8",
+            "844551d2a8309450",
+            "e547392f1fd6d2d9",
+            "7f4891e3b3e0015d",
+            "f2d5f559b542127c",
+            "ee077ca67ce1f836",
+            "c46273fc30970a89",
+            "36adf44d93a62c6a"
+        ],
+        "x": 34,
+        "y": 1979,
+        "w": 3852,
+        "h": 382
+    },
+    {
+        "id": "62666613ba6b50e1",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 2020,
+        "wires": [
+            [
+                "ff60ec03c1200f6b"
+            ]
+        ]
+    },
+    {
+        "id": "c9aee40ff3228792",
+        "type": "server-state-changed",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "velocidad ventilador",
+        "server": "21388528.add7fa",
+        "version": 6,
+        "outputs": 1,
+        "exposeAsEntityConfig": "",
+        "entities": {
+            "entity": [
+                "input_number.velocidad_ventilador"
+            ],
+            "substring": [],
+            "regex": []
+        },
+        "outputInitially": false,
+        "stateType": "str",
+        "ifState": "",
+        "ifStateType": "str",
+        "ifStateOperator": "is",
+        "outputOnlyOnStateChange": true,
+        "for": "0",
+        "forType": "num",
+        "forUnits": "minutes",
+        "ignorePrevStateNull": false,
+        "ignorePrevStateUnknown": false,
+        "ignorePrevStateUnavailable": false,
+        "ignoreCurrentStateUnknown": false,
+        "ignoreCurrentStateUnavailable": false,
+        "outputProperties": [
+            {
+                "property": "payload",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "entityState"
+            },
+            {
+                "property": "data",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "eventData"
+            },
+            {
+                "property": "topic",
+                "propertyType": "msg",
+                "value": "",
+                "valueType": "triggerId"
+            }
+        ],
+        "x": 150,
+        "y": 2180,
+        "wires": [
+            [
+                "e909fa2ba7deb5ab"
+            ]
+        ]
+    },
+    {
+        "id": "e909fa2ba7deb5ab",
+        "type": "switch",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "1/6",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1.0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "2.0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "3.0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "4.0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "5.0",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "6.0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 6,
+        "x": 330,
+        "y": 2180,
+        "wires": [
+            [
+                "a164635d7cc7f5eb"
+            ],
+            [
+                "3c7cbc2bafad9869"
+            ],
+            [
+                "a334011c47e619c1"
+            ],
+            [
+                "87e5bff551be25b3"
+            ],
+            [
+                "d8b48de983102451"
+            ],
+            [
+                "dbe2b8bbb6961b62"
+            ]
+        ]
+    },
+    {
+        "id": "a164635d7cc7f5eb",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 590,
+        "y": 2020,
+        "wires": [
+            [
+                "62666613ba6b50e1"
+            ]
+        ]
+    },
+    {
+        "id": "ff60ec03c1200f6b",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 910,
+        "y": 2020,
+        "wires": [
+            [
+                "e5ac07915f079271"
+            ]
+        ]
+    },
+    {
+        "id": "5f0b38135d0e9011",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1230,
+        "y": 2020,
+        "wires": [
+            [
+                "823e6543a7f1b305"
+            ]
+        ]
+    },
+    {
+        "id": "eab653f13656fa35",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1550,
+        "y": 2020,
+        "wires": [
+            [
+                "846eae062ee8f257"
+            ]
+        ]
+    },
+    {
+        "id": "04f8916bb3087f69",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1870,
+        "y": 2020,
+        "wires": [
+            [
+                "f02a1b70574360a6"
+            ]
+        ]
+    },
+    {
+        "id": "ba98b105c3d480a0",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 2190,
+        "y": 2020,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9ad196c6d152ac13",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 2510,
+        "y": 2080,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e5ac07915f079271",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1070,
+        "y": 2020,
+        "wires": [
+            [
+                "5f0b38135d0e9011"
+            ]
+        ]
+    },
+    {
+        "id": "823e6543a7f1b305",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1390,
+        "y": 2020,
+        "wires": [
+            [
+                "eab653f13656fa35"
+            ]
+        ]
+    },
+    {
+        "id": "846eae062ee8f257",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1710,
+        "y": 2020,
+        "wires": [
+            [
+                "04f8916bb3087f69"
+            ]
+        ]
+    },
+    {
+        "id": "f02a1b70574360a6",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2030,
+        "y": 2020,
+        "wires": [
+            [
+                "ba98b105c3d480a0"
+            ]
+        ]
+    },
+    {
+        "id": "3c7cbc2bafad9869",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 590,
+        "y": 2080,
+        "wires": [
+            [
+                "3bc23416c5e47140"
+            ]
+        ]
+    },
+    {
+        "id": "679b54548d51b647",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 910,
+        "y": 2080,
+        "wires": [
+            [
+                "0d9390d838a80beb"
+            ]
+        ]
+    },
+    {
+        "id": "0a0c413466ec7899",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1230,
+        "y": 2080,
+        "wires": [
+            [
+                "c0b321397397e6db"
+            ]
+        ]
+    },
+    {
+        "id": "0652706b4a42d95d",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1550,
+        "y": 2080,
+        "wires": [
+            [
+                "86b41f363f8da741"
+            ]
+        ]
+    },
+    {
+        "id": "1c89bb1966762d8b",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1870,
+        "y": 2080,
+        "wires": [
+            [
+                "4c559358898e1055"
+            ]
+        ]
+    },
+    {
+        "id": "1d073876c08ab998",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 2190,
+        "y": 2080,
+        "wires": [
+            [
+                "c036ca652972c11b"
+            ]
+        ]
+    },
+    {
+        "id": "3bc23416c5e47140",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 2080,
+        "wires": [
+            [
+                "679b54548d51b647"
+            ]
+        ]
+    },
+    {
+        "id": "0d9390d838a80beb",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1070,
+        "y": 2080,
+        "wires": [
+            [
+                "0a0c413466ec7899"
+            ]
+        ]
+    },
+    {
+        "id": "c0b321397397e6db",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1390,
+        "y": 2080,
+        "wires": [
+            [
+                "0652706b4a42d95d"
+            ]
+        ]
+    },
+    {
+        "id": "86b41f363f8da741",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1710,
+        "y": 2080,
+        "wires": [
+            [
+                "1c89bb1966762d8b"
+            ]
+        ]
+    },
+    {
+        "id": "4c559358898e1055",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2030,
+        "y": 2080,
+        "wires": [
+            [
+                "1d073876c08ab998"
+            ]
+        ]
+    },
+    {
+        "id": "c036ca652972c11b",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2350,
+        "y": 2080,
+        "wires": [
+            [
+                "9ad196c6d152ac13"
+            ]
+        ]
+    },
+    {
+        "id": "d504a1e42c2845e0",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 2510,
+        "y": 2140,
+        "wires": [
+            [
+                "35a1b93fec997374"
+            ]
+        ]
+    },
+    {
+        "id": "a334011c47e619c1",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 590,
+        "y": 2140,
+        "wires": [
+            [
+                "df54512bbb6e02f0"
+            ]
+        ]
+    },
+    {
+        "id": "b998dca134efa42a",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 910,
+        "y": 2140,
+        "wires": [
+            [
+                "1bd724c5a242427a"
+            ]
+        ]
+    },
+    {
+        "id": "a64dc3ec6f944653",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1230,
+        "y": 2140,
+        "wires": [
+            [
+                "7ebb3123475824f8"
+            ]
+        ]
+    },
+    {
+        "id": "7c4280eebe9ac01c",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1550,
+        "y": 2140,
+        "wires": [
+            [
+                "0ed6ef677166fc32"
+            ]
+        ]
+    },
+    {
+        "id": "3b472899f15dd882",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1870,
+        "y": 2140,
+        "wires": [
+            [
+                "705435a5f09ee208"
+            ]
+        ]
+    },
+    {
+        "id": "5a7186eadec82485",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 2190,
+        "y": 2140,
+        "wires": [
+            [
+                "16415d4199b7e6e9"
+            ]
+        ]
+    },
+    {
+        "id": "df54512bbb6e02f0",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 2140,
+        "wires": [
+            [
+                "b998dca134efa42a"
+            ]
+        ]
+    },
+    {
+        "id": "1bd724c5a242427a",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1070,
+        "y": 2140,
+        "wires": [
+            [
+                "a64dc3ec6f944653"
+            ]
+        ]
+    },
+    {
+        "id": "7ebb3123475824f8",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1390,
+        "y": 2140,
+        "wires": [
+            [
+                "7c4280eebe9ac01c"
+            ]
+        ]
+    },
+    {
+        "id": "0ed6ef677166fc32",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1710,
+        "y": 2140,
+        "wires": [
+            [
+                "3b472899f15dd882"
+            ]
+        ]
+    },
+    {
+        "id": "705435a5f09ee208",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2030,
+        "y": 2140,
+        "wires": [
+            [
+                "5a7186eadec82485"
+            ]
+        ]
+    },
+    {
+        "id": "16415d4199b7e6e9",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2350,
+        "y": 2140,
+        "wires": [
+            [
+                "d504a1e42c2845e0"
+            ]
+        ]
+    },
+    {
+        "id": "33f62be2b98abbce",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 2510,
+        "y": 2200,
+        "wires": [
+            [
+                "1735214200384909"
+            ]
+        ]
+    },
+    {
+        "id": "87e5bff551be25b3",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 590,
+        "y": 2200,
+        "wires": [
+            [
+                "8a0a89d2b5b378a8"
+            ]
+        ]
+    },
+    {
+        "id": "5411b1b4c23e9e25",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 910,
+        "y": 2200,
+        "wires": [
+            [
+                "cce7cd7de8167991"
+            ]
+        ]
+    },
+    {
+        "id": "2fcb220ccfb2a3fd",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1230,
+        "y": 2200,
+        "wires": [
+            [
+                "5f0cb35d8ad5b7d9"
+            ]
+        ]
+    },
+    {
+        "id": "e6c9abead69349de",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1550,
+        "y": 2200,
+        "wires": [
+            [
+                "ba4cfaed1f7a2136"
+            ]
+        ]
+    },
+    {
+        "id": "9f8c14f631f47454",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1870,
+        "y": 2200,
+        "wires": [
+            [
+                "e93a786e2557f747"
+            ]
+        ]
+    },
+    {
+        "id": "6902e8f21f1f6812",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 2190,
+        "y": 2200,
+        "wires": [
+            [
+                "bc94504dc708dff8"
+            ]
+        ]
+    },
+    {
+        "id": "8a0a89d2b5b378a8",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 2200,
+        "wires": [
+            [
+                "5411b1b4c23e9e25"
+            ]
+        ]
+    },
+    {
+        "id": "cce7cd7de8167991",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1070,
+        "y": 2200,
+        "wires": [
+            [
+                "2fcb220ccfb2a3fd"
+            ]
+        ]
+    },
+    {
+        "id": "5f0cb35d8ad5b7d9",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1390,
+        "y": 2200,
+        "wires": [
+            [
+                "e6c9abead69349de"
+            ]
+        ]
+    },
+    {
+        "id": "ba4cfaed1f7a2136",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1710,
+        "y": 2200,
+        "wires": [
+            [
+                "9f8c14f631f47454"
+            ]
+        ]
+    },
+    {
+        "id": "e93a786e2557f747",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2030,
+        "y": 2200,
+        "wires": [
+            [
+                "6902e8f21f1f6812"
+            ]
+        ]
+    },
+    {
+        "id": "bc94504dc708dff8",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2350,
+        "y": 2200,
+        "wires": [
+            [
+                "33f62be2b98abbce"
+            ]
+        ]
+    },
+    {
+        "id": "8bb8419228099bd1",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 2510,
+        "y": 2260,
+        "wires": [
+            [
+                "e5af9b2f22112f92"
+            ]
+        ]
+    },
+    {
+        "id": "d8b48de983102451",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 590,
+        "y": 2260,
+        "wires": [
+            [
+                "f6f5b5950cd59b16"
+            ]
+        ]
+    },
+    {
+        "id": "2218a4b290b0366d",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 910,
+        "y": 2260,
+        "wires": [
+            [
+                "c196a6d011b17a08"
+            ]
+        ]
+    },
+    {
+        "id": "02709d450d8c05cd",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1230,
+        "y": 2260,
+        "wires": [
+            [
+                "458b45b8995a10bd"
+            ]
+        ]
+    },
+    {
+        "id": "335bbffcb43ae5a6",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1550,
+        "y": 2260,
+        "wires": [
+            [
+                "729014c10a4db876"
+            ]
+        ]
+    },
+    {
+        "id": "5eb94ba3cbe133d7",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1870,
+        "y": 2260,
+        "wires": [
+            [
+                "820753a4993374cb"
+            ]
+        ]
+    },
+    {
+        "id": "71122a89680ff78b",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 2190,
+        "y": 2260,
+        "wires": [
+            [
+                "951dc9c5333c1de1"
+            ]
+        ]
+    },
+    {
+        "id": "f6f5b5950cd59b16",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 2260,
+        "wires": [
+            [
+                "2218a4b290b0366d"
+            ]
+        ]
+    },
+    {
+        "id": "c196a6d011b17a08",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1070,
+        "y": 2260,
+        "wires": [
+            [
+                "02709d450d8c05cd"
+            ]
+        ]
+    },
+    {
+        "id": "458b45b8995a10bd",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1390,
+        "y": 2260,
+        "wires": [
+            [
+                "335bbffcb43ae5a6"
+            ]
+        ]
+    },
+    {
+        "id": "729014c10a4db876",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1710,
+        "y": 2260,
+        "wires": [
+            [
+                "5eb94ba3cbe133d7"
+            ]
+        ]
+    },
+    {
+        "id": "820753a4993374cb",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2030,
+        "y": 2260,
+        "wires": [
+            [
+                "71122a89680ff78b"
+            ]
+        ]
+    },
+    {
+        "id": "951dc9c5333c1de1",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2350,
+        "y": 2260,
+        "wires": [
+            [
+                "8bb8419228099bd1"
+            ]
+        ]
+    },
+    {
+        "id": "879185db5397ab5b",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 2510,
+        "y": 2320,
+        "wires": [
+            [
+                "844551d2a8309450"
+            ]
+        ]
+    },
+    {
+        "id": "dbe2b8bbb6961b62",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 590,
+        "y": 2320,
+        "wires": [
+            [
+                "7b9370ff0f035350"
+            ]
+        ]
+    },
+    {
+        "id": "4db59b1fd2ebcb01",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 910,
+        "y": 2320,
+        "wires": [
+            [
+                "3a921921911285a0"
+            ]
+        ]
+    },
+    {
+        "id": "884e6d6ebab53d21",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1230,
+        "y": 2320,
+        "wires": [
+            [
+                "e92a3e51e691c601"
+            ]
+        ]
+    },
+    {
+        "id": "311d4d48389c25bd",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1550,
+        "y": 2320,
+        "wires": [
+            [
+                "68f482e8a38d7a69"
+            ]
+        ]
+    },
+    {
+        "id": "068744846ea925ed",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 1870,
+        "y": 2320,
+        "wires": [
+            [
+                "74bd39115ace6af0"
+            ]
+        ]
+    },
+    {
+        "id": "acb68d84c99fea1b",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador -",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador_2",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador_2",
+        "x": 2190,
+        "y": 2320,
+        "wires": [
+            [
+                "52b47b258dc715be"
+            ]
+        ]
+    },
+    {
+        "id": "7b9370ff0f035350",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 750,
+        "y": 2320,
+        "wires": [
+            [
+                "4db59b1fd2ebcb01"
+            ]
+        ]
+    },
+    {
+        "id": "3a921921911285a0",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1070,
+        "y": 2320,
+        "wires": [
+            [
+                "884e6d6ebab53d21"
+            ]
+        ]
+    },
+    {
+        "id": "e92a3e51e691c601",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1390,
+        "y": 2320,
+        "wires": [
+            [
+                "311d4d48389c25bd"
+            ]
+        ]
+    },
+    {
+        "id": "68f482e8a38d7a69",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1710,
+        "y": 2320,
+        "wires": [
+            [
+                "068744846ea925ed"
+            ]
+        ]
+    },
+    {
+        "id": "74bd39115ace6af0",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2030,
+        "y": 2320,
+        "wires": [
+            [
+                "acb68d84c99fea1b"
+            ]
+        ]
+    },
+    {
+        "id": "52b47b258dc715be",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2350,
+        "y": 2320,
+        "wires": [
+            [
+                "879185db5397ab5b"
+            ]
+        ]
+    },
+    {
+        "id": "95dd28421be47731",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 2830,
+        "y": 2140,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35a1b93fec997374",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2670,
+        "y": 2140,
+        "wires": [
+            [
+                "95dd28421be47731"
+            ]
+        ]
+    },
+    {
+        "id": "5daa889783142e57",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 2830,
+        "y": 2200,
+        "wires": [
+            [
+                "aa00bf9410f0e157"
+            ]
+        ]
+    },
+    {
+        "id": "1735214200384909",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2670,
+        "y": 2200,
+        "wires": [
+            [
+                "5daa889783142e57"
+            ]
+        ]
+    },
+    {
+        "id": "792414431e5e4dd8",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 3150,
+        "y": 2200,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "aa00bf9410f0e157",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2990,
+        "y": 2200,
+        "wires": [
+            [
+                "792414431e5e4dd8"
+            ]
+        ]
+    },
+    {
+        "id": "13def03d693d47c3",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 2830,
+        "y": 2260,
+        "wires": [
+            [
+                "a8593928d782d0ba"
+            ]
+        ]
+    },
+    {
+        "id": "e5af9b2f22112f92",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2670,
+        "y": 2260,
+        "wires": [
+            [
+                "13def03d693d47c3"
+            ]
+        ]
+    },
+    {
+        "id": "6f9e1db27ed8f2ec",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 3150,
+        "y": 2260,
+        "wires": [
+            [
+                "596df1734f46690b"
+            ]
+        ]
+    },
+    {
+        "id": "a8593928d782d0ba",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2990,
+        "y": 2260,
+        "wires": [
+            [
+                "6f9e1db27ed8f2ec"
+            ]
+        ]
+    },
+    {
+        "id": "c34eb78366b8bba2",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 3470,
+        "y": 2260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "596df1734f46690b",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 3310,
+        "y": 2260,
+        "wires": [
+            [
+                "c34eb78366b8bba2"
+            ]
+        ]
+    },
+    {
+        "id": "ad06f569800a47d8",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 2830,
+        "y": 2320,
+        "wires": [
+            [
+                "7f4891e3b3e0015d"
+            ]
+        ]
+    },
+    {
+        "id": "844551d2a8309450",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2670,
+        "y": 2320,
+        "wires": [
+            [
+                "ad06f569800a47d8"
+            ]
+        ]
+    },
+    {
+        "id": "e547392f1fd6d2d9",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 3150,
+        "y": 2320,
+        "wires": [
+            [
+                "ee077ca67ce1f836"
+            ]
+        ]
+    },
+    {
+        "id": "7f4891e3b3e0015d",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2990,
+        "y": 2320,
+        "wires": [
+            [
+                "e547392f1fd6d2d9"
+            ]
+        ]
+    },
+    {
+        "id": "f2d5f559b542127c",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 3470,
+        "y": 2320,
+        "wires": [
+            [
+                "36adf44d93a62c6a"
+            ]
+        ]
+    },
+    {
+        "id": "ee077ca67ce1f836",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 3310,
+        "y": 2320,
+        "wires": [
+            [
+                "f2d5f559b542127c"
+            ]
+        ]
+    },
+    {
+        "id": "c46273fc30970a89",
+        "type": "api-call-service",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "Ventilador +",
+        "server": "21388528.add7fa",
+        "version": 7,
+        "debugenabled": false,
+        "action": "script.ventilador",
+        "floorId": [],
+        "areaId": [],
+        "deviceId": [],
+        "entityId": [],
+        "labelId": [],
+        "data": "",
+        "dataType": "jsonata",
+        "mergeContext": "",
+        "mustacheAltTags": false,
+        "outputProperties": [],
+        "queue": "none",
+        "blockInputOverrides": false,
+        "domain": "script",
+        "service": "ventilador",
+        "x": 3790,
+        "y": 2320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "36adf44d93a62c6a",
+        "type": "delay",
+        "z": "21d0254e28c5ab8d",
+        "g": "a1f594df6e7881d2",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "0.5",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 3630,
+        "y": 2320,
+        "wires": [
+            [
+                "c46273fc30970a89"
+            ]
+        ]
+    },
+    {
+        "id": "21388528.add7fa",
+        "type": "server",
+        "name": "Home Assistant",
+        "version": 6,
+        "addon": false,
+        "rejectUnauthorizedCerts": true,
+        "ha_boolean": [
+            "y",
+            "yes",
+            "true",
+            "on",
+            "home",
+            "open"
+        ],
+        "connectionDelay": true,
+        "cacheJson": true,
+        "heartbeat": false,
+        "heartbeatInterval": "30",
+        "areaSelector": "friendlyName",
+        "deviceSelector": "friendlyName",
+        "entitySelector": "friendlyName",
+        "statusSeparator": "at: ",
+        "statusYear": "hidden",
+        "statusMonth": "short",
+        "statusDay": "numeric",
+        "statusHourCycle": "h23",
+        "statusTimeFormat": "h:m",
+        "enableGlobalContextStore": true
+    },
+    {
+        "id": "baa2f1185f31456d",
+        "type": "global-config",
+        "env": [],
+        "modules": {
+            "node-red-contrib-home-assistant-websocket": "0.80.3"
+        }
+    }
+]
